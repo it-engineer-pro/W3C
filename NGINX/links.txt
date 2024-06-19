@@ -1,0 +1,29 @@
+https://www.netnea.com/cms/nginx-tutorial-2_minimal-nginx-configuration/
+
+https://nginx.org/en/docs/beginners_guide.html
+
+https://gist.github.com/bsergean/02d447f38e6d61889de2
+
+
+#
+# Run in the foreground locally
+# nginx -p . -c nginx.conf
+#
+
+worker_processes 1;
+daemon off;
+error_log nginx_error.log;
+events {
+    worker_connections 1024;
+}
+
+http {
+    server {
+        listen 8008;
+
+        location / {
+            root /Users/bsergean/src/sandbox/json/jsoncpp;
+        }
+    }
+}
+
