@@ -27,3 +27,7 @@ http {
     }
 }
 
+
+https://docs.nginx.com/nginx/admin-guide/security-controls/terminating-ssl-http/
+
+
